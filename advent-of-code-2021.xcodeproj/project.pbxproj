@@ -11,6 +11,7 @@
 		495B2DE8275E838800EA66E4 /* day01-input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 495B2DDC275E7D6100EA66E4 /* day01-input.txt */; };
 		495B2DE9275E83B400EA66E4 /* InputFiles.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 495B2DE4275E837800EA66E4 /* InputFiles.bundle */; };
 		495B2DEB275E872E00EA66E4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B2DEA275E872E00EA66E4 /* Utility.swift */; };
+		495B2DEF275E95EC00EA66E4 /* day01-example.txt in Resources */ = {isa = PBXBuildFile; fileRef = 495B2DEE275E95EB00EA66E4 /* day01-example.txt */; };
 		49D5B0CD275E68AF007D5959 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B0CC275E68AF007D5959 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		495B2DDC275E7D6100EA66E4 /* day01-input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "day01-input.txt"; sourceTree = "<group>"; };
 		495B2DE4275E837800EA66E4 /* InputFiles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputFiles.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		495B2DEA275E872E00EA66E4 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		495B2DEE275E95EB00EA66E4 /* day01-example.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "day01-example.txt"; sourceTree = "<group>"; };
 		49D5B0C9275E68AF007D5959 /* advent-of-code-2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "advent-of-code-2021"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D5B0CC275E68AF007D5959 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 			children = (
 				495B2DD9275E6A6600EA66E4 /* Day01.swift */,
 				495B2DDC275E7D6100EA66E4 /* day01-input.txt */,
+				495B2DEE275E95EB00EA66E4 /* day01-example.txt */,
 			);
 			path = "day-01";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495B2DE8275E838800EA66E4 /* day01-input.txt in Resources */,
+				495B2DEF275E95EC00EA66E4 /* day01-example.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
