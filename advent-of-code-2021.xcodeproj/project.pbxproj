@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495B2DDA275E6A6700EA66E4 /* Day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B2DD9275E6A6600EA66E4 /* Day01.swift */; };
 		49D5B0CD275E68AF007D5959 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D5B0CC275E68AF007D5959 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		495B2DD9275E6A6600EA66E4 /* Day01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day01.swift; sourceTree = "<group>"; };
 		49D5B0C9275E68AF007D5959 /* advent-of-code-2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "advent-of-code-2021"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D5B0CC275E68AF007D5959 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		495B2DD8275E6A2400EA66E4 /* day-01 */ = {
+			isa = PBXGroup;
+			children = (
+				495B2DD9275E6A6600EA66E4 /* Day01.swift */,
+			);
+			path = "day-01";
+			sourceTree = "<group>";
+		};
 		49D5B0C0275E68AF007D5959 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		49D5B0CB275E68AF007D5959 /* advent-of-code-2021 */ = {
 			isa = PBXGroup;
 			children = (
+				495B2DD8275E6A2400EA66E4 /* day-01 */,
 				49D5B0CC275E68AF007D5959 /* main.swift */,
 			);
 			path = "advent-of-code-2021";
@@ -121,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D5B0CD275E68AF007D5959 /* main.swift in Sources */,
+				495B2DDA275E6A6700EA66E4 /* Day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
