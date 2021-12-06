@@ -9,6 +9,10 @@ import Foundation
 
 class Utility {
     
+    
+    /// Reads a file from the InputFiles bundle.
+    /// - Parameter name: The filename without  extension
+    /// - Returns: The file contents if found. Nil if file could not be read.
     static func readFile(name: String) -> String? {
         let currentDirectoryURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
         let bundleURL = URL(fileURLWithPath: "InputFiles.bundle", relativeTo: currentDirectoryURL)
