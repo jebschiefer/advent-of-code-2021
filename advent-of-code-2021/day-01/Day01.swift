@@ -40,7 +40,43 @@ class Day01 {
     }
 
     func threeMeasurement() -> Int {
-        return 0
+        var numberOfIncreases = 0
+
+        if let data = Utility.readFile(name: "day01-input") {
+            let depths = data.split(separator: "\n")
+
+            var previousSum = -1
+            var a = -1
+            var b = -1
+            var c = -1
+
+            for depth in depths {
+                let currentDepth = Int(depth) ?? 0
+
+                if a == -1 {
+                    a = currentDepth
+                } else if b == -1 {
+                    b = currentDepth
+                } else {
+                    // Minimum third iteration so sum can be counted
+                    c = currentDepth
+
+                    let currentSum = a + b + c
+
+                    if previousSum > -1 && currentSum > previousSum {
+                        numberOfIncreases += 1
+                    }
+
+                    // Shift values for next loop
+                    a = b
+                    b = c
+
+                    previousSum = currentSum
+                }
+            }
+        }
+
+        return numberOfIncreases
     }
 
 }
