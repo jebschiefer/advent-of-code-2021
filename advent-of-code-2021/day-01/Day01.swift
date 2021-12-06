@@ -8,8 +8,14 @@
 import Foundation
 
 class Day01 {
+    
     func run() {
         print("------")
         print("Day 01")
+        
+        if let data = Utility.readFile(name: "day01-input") {
+            print(data)
+        }
     }
+    
 }
