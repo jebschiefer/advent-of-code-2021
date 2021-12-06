@@ -13,11 +13,17 @@ class Day01 {
         print("------")
         print("Day 01")
 
+        print("  Part one: \(singleMeasurement())")
+        print("  Part two: \(threeMeasurement())")
+    }
+
+    func singleMeasurement() -> Int {
+        var numberOfIncreases = 0
+
         if let data = Utility.readFile(name: "day01-input") {
             let depths = data.split(separator: "\n")
 
             var previousDepth = -1
-            var numberOfIncreases = 0
 
             for depth in depths {
                 let currentDepth = Int(depth) ?? 0
@@ -28,9 +34,13 @@ class Day01 {
 
                 previousDepth = currentDepth
             }
-
-            print("Answer: \(numberOfIncreases)")
         }
+
+        return numberOfIncreases
+    }
+
+    func threeMeasurement() -> Int {
+        return 0
     }
 
 }
