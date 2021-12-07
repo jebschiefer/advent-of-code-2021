@@ -15,6 +15,9 @@ class Day03 {
 
         var power = calculatePowerConsumption(inputFile: "day03-example")
         print("  Part one example: \(power)")
+
+        power = calculatePowerConsumption(inputFile: "day03-input")
+        print("  Part one: \(power)")
     }
 
     func calculatePowerConsumption(inputFile: String) -> Int {
@@ -53,7 +56,7 @@ class Day03 {
             let gamma = Int(gammaBinary, radix: 2) ?? 0
             let epsilon = Int(epsilonBinary, radix: 2) ?? 0
 
-            print("Gamma: \(gammaBinary) (\(gamma)), Epsilon: \(epsilonBinary) (\(epsilon))")
+//            print("Gamma: \(gammaBinary) (\(gamma)), Epsilon: \(epsilonBinary) (\(epsilon))")
 
             return gamma * epsilon
         }
