@@ -13,16 +13,17 @@ class Day03 {
         print("------")
         print("Day 03")
 
-        calculatePowerConsumption(inputFile: "day03-example")
+        var power = calculatePowerConsumption(inputFile: "day03-example")
+        print("  Part one example: \(power)")
     }
 
-    func calculatePowerConsumption(inputFile: String) {
+    func calculatePowerConsumption(inputFile: String) -> Int {
         if let data = Utility.readFile(name: inputFile) {
             let numbers = data.split(separator: "\n")
 
             let numberBits = numbers[0].count
-            var gamma = ""
-            var epsilon = ""
+            var gammaBinary = ""
+            var epsilonBinary = ""
 
             for index in 0...numberBits - 1 {
                 var countZero = 0
@@ -39,16 +40,25 @@ class Day03 {
                 }
 
                 if countZero > countOne {
-                    gamma += "0"
-                    epsilon += "1"
+                    gammaBinary += "0"
+                    epsilonBinary += "1"
                 } else {
-                    gamma += "1"
-                    epsilon += "0"
+                    gammaBinary += "1"
+                    epsilonBinary += "0"
                 }
             }
 
-            print("Gamma: \(gamma), Epsilon: \(epsilon)")
+
+
+            let gamma = Int(gammaBinary, radix: 2) ?? 0
+            let epsilon = Int(epsilonBinary, radix: 2) ?? 0
+
+            print("Gamma: \(gammaBinary) (\(gamma)), Epsilon: \(epsilonBinary) (\(epsilon))")
+
+            return gamma * epsilon
         }
+
+        return 0
     }
 
 }
