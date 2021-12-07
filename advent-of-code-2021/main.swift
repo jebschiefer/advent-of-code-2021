@@ -11,4 +11,5 @@ print("Advent of Code 2021")
 
 Day01().run()
 Day02().run()
+Day03().run()
 
