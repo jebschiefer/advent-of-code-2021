@@ -28,12 +28,14 @@ class Day03 {
             var gammaBinary = ""
             var epsilonBinary = ""
 
-            for index in 0...numberBits - 1 {
+            // Loop through each set of binary numbers, keeping track of the bit in each position.
+            for bitPosition in 0...numberBits - 1 {
                 var countZero = 0
                 var countOne = 0
 
+                // Count the number of 0s and 1s at this bit position.
                 for number in numbers {
-                    let char = number[number.index(number.startIndex, offsetBy: index)]
+                    let char = number[number.index(number.startIndex, offsetBy: bitPosition)]
 
                     if char == "0" {
                         countZero += 1
@@ -42,6 +44,7 @@ class Day03 {
                     }
                 }
 
+                // For each bit position, set gamma and epsilon bits accordingly.
                 if countZero > countOne {
                     gammaBinary += "0"
                     epsilonBinary += "1"
